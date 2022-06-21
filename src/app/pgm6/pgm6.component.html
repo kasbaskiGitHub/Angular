@@ -1,0 +1,9 @@
+<p>pgm6 works!</p>
+<h4>Services: Getting a value from pgm5 through service1</h4>
+<input type="text" value={{getvalue}}>
+<h2>Getting names through services</h2>
+<input type="button" value="Click to see name list 1" name="button" (click)="getinfoRec1()">
+<ul class="list-group">
+    <li *ngFor="let n of infoRec1" class="list-group">
+        {{n}} </li>
+</ul>

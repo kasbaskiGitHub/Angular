@@ -1,0 +1,47 @@
+<p>pgm8-pipes works!</p>
+<h2>PIPES</h2>
+
+<div style="width:100%;">
+    <div style="width:80%;float:left;border:solid 1px black;">
+        <h1>Uppercase Pipe </h1>
+        {{name | uppercase }}
+        <br>
+        <h1>Lowercase Pipe</h1>
+        <b>{{'HelLO' | lowercase | uppercase}}</b>
+
+        <h1>Decimal Pipe</h1>
+        <b>{{ 3.14 | number: '4.5' }}</b> // Integer part: 4 digits, Decimal part: 5 digits.
+        <h1>Percent Pipe</h1>
+        <b>{{00.64565 | percent}}</b> -->
+
+        <h1>Currency Pipe</h1>
+        <b>----{{6589.23 | currency:"$"}}</b> <br>
+        <b>----{{6589.23 | currency:"₹"}}</b>
+        <BR>
+        <b>----{{6589.23 | currency:"Rs."}}</b>
+    </div>
+
+    <div style="width:80%;float:left;border:solid 1px black;">
+
+        <h1>Date pipe</h1>
+        <b>Date:</b> {{today | date}}<br>
+        <b>Date with format**</b>{{today | date:'dd/MM/yy'}}<br>
+        <b>Time**</b> {{today | date:'hh:mm:ss'}}<br>
+        <b>Time with AM/PM**</b> {{today | date:'hh:mm:ssmm:hh:ss a'}}<br>
+        <b>Date with Time-short**</b> {{today | date:'short'}}<br>
+        <b>Date with Time-medium**</b> {{today | date:'medium'}}<br>
+        <b>Date with Time-full**</b> {{today | date:'long'}}<br>
+        <b>Date with Time-long**</b> {{today | date:'full'}}<br>
+    </div>
+
+
+
+    <div style="width:40%;float:left;border:solid 1px black;">
+
+        <h1>Slice Pipe</h1>
+        <b>{{months | slice:2:6}}</b> ----
+        <p>here 2 and 6 refers to the start and the end index</p>
+        <BR>
+        <b>{{names | slice:0:6}}</b>
+    </div>
+</div>

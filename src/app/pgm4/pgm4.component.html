@@ -1,0 +1,66 @@
+<p>----------------------------------------------------------------------------------------pgm4 works!</p>
+<h4>Example for ngFor:List of heterogeneous array</h4>
+<ul>
+    <li *ngFor="let temp of emp">{{temp}}</li>
+</ul>
+
+<h4>Example for ngSwitch</h4>
+
+<input type="text" placeholder="Enter the language code"  #inpid>
+<input type="submit" value="submit"  (click)="langfunction(inpid.value)">
+    <div  [ngSwitch]="langcode">
+
+        <p *ngSwitchCase=1>
+            Hindi
+            </p>
+
+            <p *ngSwitchCase=2>
+                Kannada
+                </p>
+
+                <p *ngSwitchDefault>
+                    English
+                    </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- <h4>Example for ngSwitch: Print the language for the given code</h4>
+<div [ngSwitch]="langcode">​
+    <p *ngSwitchCase=1>​ Java​
+    </p>​
+    <p *ngSwitchCase=2>​ C++
+    </p>
+    <p *ngSwitchCase=3>​ JavaScript
+</p>​
+<p *ngSwitchDefault>​ Python
+</p>​
+</div>
+<h4>Example for ngSwitch with DYNAMIC VALUE: Print the language for the given code</h4>
+<input type="text" placeholder="Enter a code for selection a programming language:" #code>
+<input type="button" value="Press to see your selection" (click)="langfunction(code.value)">
+<div [ngSwitch]="code2">​
+    <p *ngSwitchCase=1>​ Java​
+    </p>​
+    <p *ngSwitchCase=2>​ C++
+    </p>
+    <p *ngSwitchCase=3>​ JavaScript
+    </p>​
+    <p *ngSwitchDefault>​ Python
+    </p>
+</div> -->

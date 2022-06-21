@@ -1,0 +1,45 @@
+<p> --------------------------------------------------------->pgm3 works!</p>
+
+<h3>Structural Directives :ngIf:</h3>
+<hr>
+
+<table>
+    <tr>
+
+        <td>
+            <h4> ngIf...else...Eg-1</h4>
+
+            <button type="button" (click)="function2()">Check if you are eligible for training:</button>
+
+            <div *ngIf="age>26; else id3">
+                <p>This is if part.</p>
+                <p>your age is {{age}}. You are elibile for training.</p>
+            </div>
+            <ng-template #id3>
+                <p>This is else part.</p>
+                <p>your age is not {{age}}. Sorry, you are not eligible for training.</p>
+            </ng-template>
+        </td>
+    </tr>
+</table>
+<hr>
+
+
+
+
+
+
+<!-- 
+
+        <td>
+            <h4> ngIf...else...Eg-2</h4>
+            <button type="button" (click)="invertx()">Toggle the boolean value</button>
+            <div *ngIf="x; else id2">
+                <p>This is if part.</p>
+                <p>x value= {{x}}</p>
+            </div>
+            <ng-template #id2>
+                <p>This is else part.</p>
+                <p>x value = {{x}}</p>
+            </ng-template>
+        </td>-->

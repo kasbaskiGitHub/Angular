@@ -1,0 +1,30 @@
+<p>pgm1 works!</p>
+
+<h3>One way Data binding : 1.Interpolation</h3>
+<h4> passing data from ts file to html file</h4>
+<p>We are with {{name}} Foundation, {{city}} - {{pin}}</p>
+<hr>
+
+
+
+<h3>One way Data binding : 2.Event Binding:</h3>
+<h4> passing events from html to ts file</h4>
+<h5>Calling method using click event</h5>
+
+<input type=button Value="Click for display message" (click)="method1()">
+<br>
+<h5> Calling method using mouse enter event :</h5>
+<input type=button Value="Enter your mouse for display message" (mouseenter)="method1()"><br>
+<hr>
+
+
+
+<h3>One way data binding: 3.Property Binding</h3>
+<h4>Binding the placeholder:</h4>
+Name: <input type="text" [placeholder]="inpmsg">
+<br> <br> Company: <input type="text" [placeholder]="inpmsg">
+<br> <br> City: <input type="text" [placeholder]="inpmsg"><br>
+
+
+<h4>Binding the image:</h4>
+Team: <img [src]="teampic" alt="Oops... Error in loading the image...">

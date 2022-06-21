@@ -1,0 +1,47 @@
+<h1> Angular Demo programs</h1>
+
+<!-- <p>Menu bar/Navigation bar using bootstrap:</p> -->
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">||.....................Data Binding.......................||</a>
+            <a class="navbar-brand" href="#">......Structural Directives......||</a>
+            <a class="navbar-brand" href="#">................................... Services..................................||</a>
+            <a class="navbar-brand" href="#">...........PIPES.......</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="pgm1">Oneway data binding...</a></li>
+            <li><a href="pgm2">Two way data binding...</a></li>
+            <li>
+                <a href="#"></a>
+            </li>
+
+
+            <li class=""><a href="pgm3">ngIF...</a></li>
+            <li><a href="pgm4">ngFor, ngSwitch</a></li>
+
+            <li>
+                <a href="#"></a>
+            </li>
+
+            <li class=""><a href="pgm5">Sending service.....</a></li>
+            <li><a href="pgm6">Receiving service....</a></li>
+            <li><a href="pgm7">Receiving service..info2..</a></li>
+            <li><a href="pgm8-pipes">Pipes....</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<!-- <p> The above code is using bootstrap. 
+    The following is without using bootstrap:
+    </p>
+<a routerLink='pgm1'>Oneway data binding</a> |
+<a routerLink='pgm2'>Twoway data binding</a> | 
+<a routerLink='pgm3'>Structural Directives: ngIf</a> |
+<a routerLink='pgm4'>Structural Directives: ngFor, ngSwitch</a> |
+<a routerLink='pgm5'>Services:sending</a> |
+<a routerLink='pgm6'>Services:receiving</a>-->
+
+<router-outlet></router-outlet>
